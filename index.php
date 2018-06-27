@@ -4,7 +4,7 @@
 	$person1_specialization = 'Программист';
 	$person1_age = 25;
 
-	function greatings($name, $spec, $age){
+	function greeting($name, $spec, $age){
 		echo "Привет! Я $name. Моя специальность $spec. Мне $age лет.";
 	}
 
@@ -12,9 +12,9 @@
 	$person2_specialization = 'Повар';
 	$person2_age = 28;
 
-  greatings($person1_name, $person1_specialization, $person1_age );
+  greeting($person1_name, $person1_specialization, $person1_age );
   echo '<br>';
-  greatings($person2_name, $person2_specialization, $person2_age );
+  greeting($person2_name, $person2_specialization, $person2_age );
 
   class Person {
 
@@ -28,7 +28,7 @@
   		$this->age = $age;
   	}
 
-  	public function greatings(){
+  	public function greeting(){
   		echo "Привет! Я $this->name. Моя специальность $this->specialization. Мне $this->age лет.";
   	}
   }
@@ -36,8 +36,8 @@
 $p1 = new Person('Вова', 'Физик', 67);
 $p2 = new Person('Костя', 'Математик', 47);
 echo '<h1> Объекты </h1>';
-$p1->greatings();
+$p1->greeting();
   echo '<br>';
-$p2->greatings();
+$p2->greeting();
 
 ?>
